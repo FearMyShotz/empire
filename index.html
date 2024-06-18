@@ -23,7 +23,7 @@
             window.addEventListener('load', async () => {
                 let response;
                 try {
-                    response = await fetch("https://sheltered-everglades-24913.fly.dev/https://empire.goodgamestudios.com")
+                    response = await fetch("https://sheltered-everglades-24913.fly.dev/https://empire.goodgamestudios.com/n/64/")
                     response = await response.text()
                     response = new DOMParser().parseFromString(response, 'text/html');
                     response.head.insertAdjacentHTML("beforeend", `
