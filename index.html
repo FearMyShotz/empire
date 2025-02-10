@@ -53,5 +53,12 @@
                 }
             });
         </script>
+        <script>
+            // Enforce default Windows cursor
+            document.body.style.cursor = 'default';
+            document.addEventListener('mouseover', function(event) {
+                event.target.style.cursor = 'default';
+            });
+        </script>
     </body>
 </html>
