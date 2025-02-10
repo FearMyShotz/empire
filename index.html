@@ -59,6 +59,15 @@
             document.addEventListener('mouseover', function(event) {
                 event.target.style.cursor = 'default';
             });
+            // Add a MutationObserver to detect and prevent any changes to the cursor
+            const observer = new MutationObserver((mutationsList) => {
+                for (const mutation of mutationsList) {
+                    if (mutation.type === 'attributes' && mutation.attributeName === 'style') {
+                        mutation.target.style.cursor = 'default';
+                    }
+                }
+            });
+            observer.observe(document.body, { attributes: true, subtree: true });
         </script>
     </body>
 </html>
