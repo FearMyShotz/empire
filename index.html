@@ -6,13 +6,13 @@
         <meta name="description"
             content="Goodgame Empire is a medieval strategy browser game. Build you own castle, create a powerful army and fight epic PvP battles. Start playing now!">
         <meta property="og:title" content="Goodgame Empire">
-        <meta property="og:url" content="https://danadum.github.io/empire">
+        <meta property="og:url" content="https://fearmyshotz.github.io/empire">
         <meta property="og:description"
             content="Goodgame Empire is a medieval strategy browser game. Build you own castle, create a powerful army and fight epic PvP battles. Start playing now!">
         <meta property="og:image" content="https://media.goodgamestudios.com/sns/_img/game12/fb_logo.jpg">
         <meta name="viewport"
             content="width=device-width,initial-scale=1,shrink-to-fit=no,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-        <link rel="canonical" href="https://danadum.github.io/empire">
+        <link rel="canonical" href="https://fearmyshotz.github.io/empire">
         <link rel="shortcut icon" href="//media.goodgamestudios.com/www/favicon_12.ico" type="image/x-icon">
         <title>Goodgame Empire</title>
         <link rel="manifest" href="/empire/manifest.webmanifest">
@@ -28,7 +28,7 @@
                 }
                 else {
                     let response;
-                    response = await fetch("https://cors-anywhere.com/https://empire.goodgamestudios.com")
+                    response = await fetch("https://cors-buster.fly.dev/https://empire.goodgamestudios.com")
                     response = await response.text()
                     response = new DOMParser().parseFromString(response, 'text/html');
                     response.head.insertAdjacentHTML("beforeend", `
@@ -55,5 +55,6 @@
         </script>
     </body>
 </html>
+
 
 
