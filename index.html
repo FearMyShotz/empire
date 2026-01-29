@@ -28,7 +28,7 @@
                 }
                 else {
                     let response;
-                    response = await fetch("https://corsproxy.io/?url=https://empire.goodgamestudios.com")
+                    response = await fetch("https://cors-buster.fly.dev/?url=https://empire.goodgamestudios.com")
                     response = await response.text()
                     response = new DOMParser().parseFromString(response, 'text/html');
                     response.head.insertAdjacentHTML("beforeend", `
@@ -55,6 +55,7 @@
         </script>
     </body>
 </html>
+
 
 
 
